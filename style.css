@@ -1,0 +1,102 @@
+body, html {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    background: #000;
+    font-family: Helvetica, sans-serif;
+}
+
+.circle {
+    position: relative;
+    display: block;
+    width: 75%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.circle > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    transform-origin: 50% 50%;
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: rotate infinite linear;
+}
+
+.circle > * > * {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #ccc;
+    border-radius: 100%;
+    animation: borderOpen infinite linear 8s;
+}
+
+.circle > *:nth-child(1) {
+    animation-duration: 8s;
+}
+
+.circle > *:nth-child(2) {
+    animation-duration:32s;
+    margin: 10vh;
+    height: 80vh;
+    width: 80vh;
+}
+
+.circle > *:nth-child(3) {
+    animation-duration: 64s;
+    margin: 20vh;
+    height: 60vh;
+    width: 60vh;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes borderOpen {
+    0% { border-color: rgba(255, 255, 255, 0)
+    rgba(255, 255, 255, 0) rgba(255, 255, 255, 0)
+    rgba(255, 255, 255, 0);}
+    25%{ border-top-color: 
+    rgba(255, 255, 255, 1);}
+    50%{ border-right-color: 
+    rgba(255, 255, 255, 1);}
+    75%{ border-bottom-color: 
+    rgba(255, 255, 255, 1);}
+    100%{ border-left-color: 
+    rgba(255, 255, 255, 1);}
+}
+
+.haze {
+    transition: text-shadow 1.5s;
+}
+
+.haze:hover {
+    animation: hazeAnim 3s linear infinite;
+    text-shadow: 0 0 15px
+    rgba(255, 255, 255, 0.5);
+    color: transparent;
+}
+
+@keyframes hazeAnim{
+    0%, 100%{transform: scaleY(1);}
+    50%{transform: scaleY(2);}
+}
+
+.text {
+    position: relative;
+    display: block;
+    width: 40%;
+    height: 40%;
+    text-align: right;
+    margin-left: 50%;
+}
+
