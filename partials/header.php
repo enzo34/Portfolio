@@ -15,30 +15,11 @@
   <body>
 
    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
+      <div class="conteiner">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Bienvenue</a>
         </div>
       </div><!--container-->
     </div><!--navbar-->
 
-    <div class="container">
-
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-
-      <h1>Bienvenue</h1>
-    </div>
-
-    <div class="text">
-      <h1 class="haze"> Bienvenue sur mon portfolio</h1>
-    <p> Bonjour je me présente je m'appelle Enzo</p>
-    <p class="haze">Je vous souhaite la bienvenue dans mon univers de dévellopeur.</p>
-    </div>
-
-    <div class="circle">
-      <span><span></span></span>
-      <span><span></span></span>
-      <span><span></span></span>
-    </div>
+    

@@ -23,6 +23,7 @@
       <ul class="nav navbar-nav">
       <li>
         <a href="category.php">Catégories</a>
+        <a href="projet.php">Projet</a>
       </li>
       </ul>
     </div><!--navbar-->

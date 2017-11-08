@@ -10,7 +10,7 @@ include '../partials/admin_header.php';
 if(isset($_GET['delete'])) {
     checkCsrf();
     $id = $db->quote($_GET['delete']);
-    $db->query("DELETE FROM categorie WHERE id=$id");
+    $db->query("DELETE * FROM categorie WHERE id=$id");
     setflash('La catégorie a bien été supprimée');
     header('Location:category.php');
 }

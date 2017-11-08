@@ -31,7 +31,8 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     </div>
     <button type="submit" class="btn btn-default">Se connecter</button>
 </form>
-
+<?php include 'partials/body.php'; ?>
+<?php include 'partials/header.php'; ?>
 <?php 
 include 'partials/header.php';
 include 'partials/footer.php';?>
